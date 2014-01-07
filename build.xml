@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<project name="starling" basedir="" default="build">
+
+    <property name="FLEX_HOME" location="D:\Software\FlexSDK\AIR_SDK_3.7"/>
+    <taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar"/>
+
+    <target name="build" description="Builds the purple-circle game">
+        <mxmlc file="src/Main.as" output="PurpleCircle.swf" optimize="true">
+            <source-path path-element="src"/>
+            <compiler.library-path dir="" append="true">
+                <include name="lib"/>
+            </compiler.library-path>
+        </mxmlc>
+    </target>
+
+</project>
